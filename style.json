@@ -1,0 +1,43 @@
+{
+  "version": 8,
+  "name": "Empty Style",
+  "metadata": {},
+  "sources": {
+    "openmaptiles": {
+      "type": "vector",
+      "url": "https://api.maptiler.com/tiles/v3-openmaptiles/tiles.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL"
+    },
+    "ouhkdal": {"type": "vector", "url": "https://localhost:3000/tilejson.json"}
+  },
+  "sprite": "",
+  "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "Fondo",
+      "type": "background",
+      "paint": {"background-color": "rgba(220, 239, 204, 1)"}
+    },
+    {
+      "id": "agua",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "water",
+      "paint": {"fill-color": "rgba(108, 194, 226, 1)"}
+    },
+    {
+      "id": "limites",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "boundary",
+      "paint": {"line-opacity": 0.5}
+    },
+    {
+      "id": "lugares",
+      "type": "circle",
+      "source": "openmaptiles",
+      "source-layer": "place",
+      "paint": {"circle-color": "rgba(183, 139, 139, 1)"}
+    }
+  ],
+  "id": "qzouwmy"
+}

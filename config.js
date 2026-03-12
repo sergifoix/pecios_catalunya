@@ -15,17 +15,17 @@ var config = {
     theme: 'dark',
     use3dTerrain: false, //set true for enabling 3D maps.
     auto: false,
-    title: 'Your Title Goes Here',
-    subtitle: 'The Storytelling Template helps you create an awesome animated map story with ease.',
-    byline: 'By a I.M. Amapper',
+    title: 'Pecios en las Costas Catalanas para Submarinismo',
+    subtitle: 'Que no sea porque no sabes donde ir.',
+    byline: 'By Sergi Foix',
     footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
         {
             id: 'slug-style-id',
             alignment: 'left',
             hidden: false,
-            title: 'San Francisco',
-            image: './assets/san-fran.jpeg',
+            title: 'Reggio Messina',
+            image: './assets/regio_messina.jpeg',
             description: 'The first chapter contains a title, image, and camera view for San Francisco, California. Update the chapter data to make it your own.',
             location: {
                 center: [-122.418398, 37.759483],

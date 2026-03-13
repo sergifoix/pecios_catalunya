@@ -7,7 +7,85 @@
       "type": "vector",
       "url": "https://api.maptiler.com/tiles/v3-openmaptiles/tiles.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL"
     },
-    "ouhkdal": {"type": "vector", "url": "https://localhost:3000/tilejson.json"}
+    "7tluv6i": {
+      "type": "geojson",
+      "cluster": false,
+      "data": {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {"type": "Point", "coordinates": [3.201828, 42.079751]},
+            "properties": {"Nombre": "REGGIO MESSINA", "Profundidad": "24-35"}
+          },
+          {
+            "type": "Feature",
+            "geometry": {"type": "Point", "coordinates": [3.120375, 41.838043]},
+            "properties": {"Nombre": "BOREAS", "Profundidad": "23-34"}
+          },
+          {
+            "type": "Feature",
+            "properties": {"Nombre": "SAINT PROSPER", "Profundidad": "50-60"},
+            "geometry": {"type": "Point", "coordinates": [3.180542, 42.184776]}
+          },
+          {
+            "type": "Feature",
+            "properties": {"Nombre": "AVVENIRE", "Profundidad": "40-45"},
+            "geometry": {"type": "Point", "coordinates": [3.18672, 42.10918]}
+          },
+          {
+            "type": "Feature",
+            "properties": {"Nombre": "COTENTIN", "Profundidad": "6-12"},
+            "geometry": {"type": "Point", "coordinates": [3.165543, 42.114413]}
+          },
+          {
+            "type": "Feature",
+            "properties": {"Nombre": "MIRACLE", "Profundidad": 15},
+            "geometry": {"type": "Point", "coordinates": [1.267097, 41.110917]}
+          },
+          {
+            "type": "Feature",
+            "properties": {"Nombre": "DRAGONERA", "Profundidad": "23-24"},
+            "geometry": {"type": "Point", "coordinates": [1.230037, 41.089217]}
+          },
+          {
+            "type": "Feature",
+            "properties": {"Nombre": "CAVOUR", "Profundidad": "43-45"},
+            "geometry": {"type": "Point", "coordinates": [0.898132, 40.907286]}
+          },
+          {
+            "type": "Feature",
+            "properties": {"Nombre": "ARBRET", "Profundidad": 63},
+            "geometry": {"type": "Point", "coordinates": [1.144711, 41.005879]}
+          },
+          {
+            "type": "Feature",
+            "properties": {"Nombre": "VAPOR DE LLEVANT", "Profundidad": 100},
+            "geometry": {"type": "Point", "coordinates": [1.251938, 40.936019]}
+          },
+          {
+            "type": "Feature",
+            "properties": {"Nombre": "ST. MARIA (REPLICA)", "Profundidad": 57},
+            "geometry": {"type": "Point", "coordinates": [2.662665, 41.584261]}
+          },
+          {
+            "type": "Feature",
+            "properties": {"Nombre": "VAPOR DEL PIXAVAQUER", "Profundidad": 73},
+            "geometry": {"type": "Point", "coordinates": [1.00627, 40.768855]}
+          },
+          {
+            "type": "Feature",
+            "properties": {"Nombre": "NOU AMPURDANES", "Profundidad": 60},
+            "geometry": {"type": "Point", "coordinates": [2.522076, 41.482905]}
+          },
+          {
+            "type": "Feature",
+            "properties": {"Nombre": "CHULMLEIGH", "Profundidad": 82},
+            "geometry": {"type": "Point", "coordinates": [1.048521, 40.889533]}
+          }
+        ]
+      }
+    }
   },
   "sprite": "",
   "glyphs": "https://orangemug.github.io/font-glyphs/glyphs/{fontstack}/{range}.pbf",
@@ -15,6 +93,7 @@
     {
       "id": "Fondo",
       "type": "background",
+      "minzoom": 0,
       "paint": {"background-color": "rgba(220, 239, 204, 1)"}
     },
     {
@@ -37,6 +116,13 @@
       "source": "openmaptiles",
       "source-layer": "place",
       "paint": {"circle-color": "rgba(183, 139, 139, 1)"}
+    },
+    {
+      "id": "Pecios",
+      "type": "circle",
+      "source": "7tluv6i",
+      "source-layer": "Feature",
+      "paint": {"circle-stroke-color": "rgba(64, 6, 239, 1)"}
     }
   ],
   "id": "qzouwmy"

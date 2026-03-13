@@ -1,13 +1,7 @@
 var config = {
-    // style: 'mapbox://styles/mapbox/streets-v12',
-    style: './style.json',
-    // leave commented to use Mapbox Standard Style
-    accessToken: 'YOUR_MAPBOX_ACCESS_TOKEN',
+    style: 'style.json',
     showMarkers: true,
     markerColor: '#3FB1CE',
-    //projection: 'equirectangular',
-    //Read more about available projections here
-    //https://docs.mapbox.com/mapbox-gl-js/example/projections/
     inset: true,
     insetOptions: {
         markerColor: 'orange'
